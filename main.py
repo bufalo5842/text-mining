@@ -224,7 +224,7 @@ def custom_cloud():
 
     wordcloud = WordCloud(width = 3000, height = 2000, random_state=1, \
         background_color='white', colormap='Set2', \
-        collocations=False, stopwords = STOPWORDS)  # Make custom word cloud
+        collocations=False, stopwords = STOPWORDS)  # Make custom wordcloud
 
     wordcloud.generate(Harry_text)
     plt.imshow(wordcloud)
