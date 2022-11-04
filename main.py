@@ -39,7 +39,7 @@ def word_tokenization(text):
     Split each word into tokens.
     """
     
-    word_tokens = nltk.word_tokenize(text)   # tokenize by using nltk
+    word_tokens = nltk.word_tokenize(text)   
 
     return word_tokens
 
@@ -50,7 +50,7 @@ def freq_word_graph(text):
     
     word_tokens = nltk.word_tokenize(text)
 
-    en = nltk.Text(word_tokens) # get text data
+    en = nltk.Text(word_tokens) # get text data from tokenized words
 
     return en.plot(50)          # draw graph
 
@@ -206,9 +206,6 @@ def draw_text_cloud():
     Draw a text cloud with words in text
     website used: https://www.geeksforgeeks.org/generating-word-cloud-python/#:~:text=For%20generating%20word%20cloud%20in,from%20UCI%20Machine%20Learning%20Repository. 
     """
-        
-    from wordcloud import WordCloud       # Load wordCloud function
-    import matplotlib.pyplot as plt       # Load matplotlib.pyplot and shorten the name to plt
 
 
     wordcloud = WordCloud()               # Storing a function as a variable and turning it into a method
